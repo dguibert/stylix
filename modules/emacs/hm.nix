@@ -20,6 +20,8 @@ in
             src = pkgs.writeText "base16-stylix-theme.el" ''
               (require 'base16-theme)
 
+              (setq base16-theme-256-color-source 'colors)
+
               (defvar base16-stylix-theme-colors
                 '(:base00 "${base00}"
                   :base01 "${base01}"
